@@ -28,7 +28,7 @@ class HttpManager {
     if (useAuth) {
       // Replace 'YOUR_API_KEY' with your actual API key
       const apiKey =
-          '';
+          'live_IrHXt9axEZhDM4eLQnQtVaLF0BS4lHwir31aW4Wv4UERlOZQpJyASUJ4m1HN7u7P';
 
    //   PrintLog.printLog('Using API key: $apiKey');
 
