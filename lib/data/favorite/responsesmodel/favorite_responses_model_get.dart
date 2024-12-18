@@ -52,21 +52,9 @@ class FavoritesResponsesModelGet {
 }
 
 class Image {
-  final String url;
-  final String id;
+  Image();
 
-  Image({
-    required this.url,
-    required this.id,
-  });
+  factory Image.fromJson(Map<String, dynamic> json) => Image();
 
-  factory Image.fromJson(Map<String, dynamic> json) => Image(
-        url: json["url"],
-        id: json["id"],
-      );
-
-  Map<String, dynamic> toJson() => {
-        "url": url,
-        "id": id,
-      };
+  Map<String, dynamic> toJson() => {};
 }
