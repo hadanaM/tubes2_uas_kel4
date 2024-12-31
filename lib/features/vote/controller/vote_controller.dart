@@ -30,10 +30,8 @@ class VoteController extends GetxController {
     if (query.isEmpty) {
       searchResults.value = vote;
     } else {
-      searchResults.value = vote
-          .where((element) =>
-              element.id.toString().toLowerCase().contains(query.toLowerCase()))
-          .toList();
+      searchResults.value =
+          vote.where((element) => element.id.toString().toLowerCase().contains(query.toLowerCase())).toList();
     }
   }
 
